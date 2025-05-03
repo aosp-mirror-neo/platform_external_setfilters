@@ -1,13 +1,13 @@
 filegroup {
     name: "cuckoofilter_srcs",
-    srcs: ["java/com/google/setfilters/cuckoofilter/*.java"],
+    srcs: ["setfilters/src/com/google/setfilters/cuckoofilter/*.java"],
 }
 
 filegroup {
     name: "cuckoofilter_test_srcs",
-    srcs: ["javatests/com/google/setfilters/cuckoofilter/*.java"],
+    srcs: ["setfilters-tests/test/com/google/setfilters/cuckoofilter/*.java"],
     // For now exclude tests with mocks.
-    exclude_srcs: ["javatests/com/google/setfilters/cuckoofilter/CuckooFilterTableTest.java"],
+    exclude_srcs: ["setfilters-tests/test/com/google/setfilters/cuckoofilter/CuckooFilterTableTest.java"],
 }
 
 java_library {
